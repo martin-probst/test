@@ -1,0 +1,19 @@
+name: Create and publish a package
+on:
+  push:
+    branches-ignore:
+      - hotfix
+  pull_request:
+    branches:
+      - hotfix
+    types:
+      - closed
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check if version was updated
+        run: |
+          echo head: $GITHUB_HEAD_REF
+          echo ref: $GITHUB_REF_NAME
+      
