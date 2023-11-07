@@ -1,4 +1,4 @@
-name: Create and publish a package
+name: Do some test changes
 on:
   push:
     branches-ignore:
