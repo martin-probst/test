@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Only HTTPS is allowed. If the PostgREST API is reachable via plain HTTP in the
+    local network only, add its host here, e.g.
+    <domain-config cleartextTrafficPermitted="true"><domain includeSubdomains="false">192.168.1.10</domain></domain-config>
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+</network-security-config>
